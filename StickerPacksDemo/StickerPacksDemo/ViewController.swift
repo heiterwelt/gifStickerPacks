@@ -7,6 +7,11 @@
 //
 
 import UIKit
+// first look
+// custom image and it can convert video into gif and add to demo
+// edit video very simple
+// do not add asset
+// just so now
 
 class ViewController: UIViewController {
 
