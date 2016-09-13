@@ -14,6 +14,10 @@
 		C0CE96291D87B536003EF045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0CE96271D87B536003EF045 /* LaunchScreen.storyboard */; };
 		C0CE96341D87B537003EF045 /* StickerPacksDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE96331D87B537003EF045 /* StickerPacksDemoTests.swift */; };
 		C0CE963F1D87B537003EF045 /* StickerPacksDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE963E1D87B537003EF045 /* StickerPacksDemoUITests.swift */; };
+		C0CE964F1D87B634003EF045 /* NSGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CE964E1D87B634003EF045 /* NSGIF.m */; };
+		C0CE96541D87B6A7003EF045 /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE96511D87B6A7003EF045 /* SwiftyGifManager.swift */; };
+		C0CE96551D87B6A7003EF045 /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE96521D87B6A7003EF045 /* UIImage+SwiftyGif.swift */; };
+		C0CE96561D87B6A7003EF045 /* UIImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE96531D87B6A7003EF045 /* UIImageView+SwiftyGif.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,12 @@
 		C0CE963A1D87B537003EF045 /* StickerPacksDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickerPacksDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CE963E1D87B537003EF045 /* StickerPacksDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerPacksDemoUITests.swift; sourceTree = "<group>"; };
 		C0CE96401D87B537003EF045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0CE964C1D87B633003EF045 /* StickerPacksDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StickerPacksDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		C0CE964D1D87B634003EF045 /* NSGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSGIF.h; sourceTree = "<group>"; };
+		C0CE964E1D87B634003EF045 /* NSGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSGIF.m; sourceTree = "<group>"; };
+		C0CE96511D87B6A7003EF045 /* SwiftyGifManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyGifManager.swift; sourceTree = "<group>"; };
+		C0CE96521D87B6A7003EF045 /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
+		C0CE96531D87B6A7003EF045 /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,16 @@
 		C0CE961D1D87B536003EF045 /* StickerPacksDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C0CE96501D87B6A7003EF045 /* SwiftyGif */,
+				C0CE964D1D87B634003EF045 /* NSGIF.h */,
+				C0CE964E1D87B634003EF045 /* NSGIF.m */,
 				C0CE961E1D87B536003EF045 /* AppDelegate.swift */,
 				C0CE96201D87B536003EF045 /* ViewController.swift */,
 				C0CE96221D87B536003EF045 /* Main.storyboard */,
 				C0CE96251D87B536003EF045 /* Assets.xcassets */,
 				C0CE96271D87B536003EF045 /* LaunchScreen.storyboard */,
 				C0CE962A1D87B536003EF045 /* Info.plist */,
+				C0CE964C1D87B633003EF045 /* StickerPacksDemo-Bridging-Header.h */,
 			);
 			path = StickerPacksDemo;
 			sourceTree = "<group>";
@@ -123,6 +137,16 @@
 				C0CE96401D87B537003EF045 /* Info.plist */,
 			);
 			path = StickerPacksDemoUITests;
+			sourceTree = "<group>";
+		};
+		C0CE96501D87B6A7003EF045 /* SwiftyGif */ = {
+			isa = PBXGroup;
+			children = (
+				C0CE96511D87B6A7003EF045 /* SwiftyGifManager.swift */,
+				C0CE96521D87B6A7003EF045 /* UIImage+SwiftyGif.swift */,
+				C0CE96531D87B6A7003EF045 /* UIImageView+SwiftyGif.swift */,
+			);
+			path = SwiftyGif;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CE96541D87B6A7003EF045 /* SwiftyGifManager.swift in Sources */,
+				C0CE96561D87B6A7003EF045 /* UIImageView+SwiftyGif.swift in Sources */,
+				C0CE964F1D87B634003EF045 /* NSGIF.m in Sources */,
 				C0CE96211D87B536003EF045 /* ViewController.swift in Sources */,
 				C0CE961F1D87B536003EF045 /* AppDelegate.swift in Sources */,
+				C0CE96551D87B6A7003EF045 /* UIImage+SwiftyGif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +429,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = StickerPacksDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = th.in.gamforest.StickerPacksDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StickerPacksDemo/StickerPacksDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -412,10 +444,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = StickerPacksDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = th.in.gamforest.StickerPacksDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "StickerPacksDemo/StickerPacksDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
